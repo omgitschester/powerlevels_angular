@@ -1,0 +1,20 @@
+<p>powerComponent</p>
+<p>Current Level {{ powerlevel }}</p>
+<div>
+  <label>Initial Power Level</label>
+<input type="number" max="100" min="0" [(ngModel)]='powerlevel'>
+<input *ngIf='powerlevel>100' disabled (click)='all()' type="submit" value="Calculate powers">
+<input *ngIf='powerlevel<=100' (click)='all()' type="submit" value="Calculate powers">
+</div>
+
+<div class="main1">
+  <app-human-component [myHuman]='human'></app-human-component>
+  <app-saiyan-component [mySaiyan]='saiyan'></app-saiyan-component>
+  <app-super-saiyan-component [mySuperSaiyan]='supersaiyan'></app-super-saiyan-component>
+</div>
+
+<div class="main2">
+  <app-super-saiyan-component2 [mySuperSaiyan2]='supersaiyan2'></app-super-saiyan-component2>
+  <app-super-saiyan-component3 [mySuperSaiyan3]='supersaiyan3'></app-super-saiyan-component3>
+  <app-super-saiyan-component4 [mySuperSaiyan4]='supersaiyan4'></app-super-saiyan-component4>
+</div>

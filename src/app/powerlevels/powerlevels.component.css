@@ -1,0 +1,10 @@
+.main1 *{
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.main2 *{
+    display: inline-block;
+    vertical-align: top;
+}
